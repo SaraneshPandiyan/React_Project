@@ -1,0 +1,65 @@
+/* Center the whole page */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#1abc9c,#3498db);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scoreboard box */
+.container{
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Title */
+.container h1{
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Score text */
+.container h2{
+    color: #34495e;
+    margin: 8px 0;
+}
+
+/* Button layout */
+.buttons{
+    margin-top: 20px;
+}
+
+/* Run buttons */
+button{
+    margin: 6px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Wicket button */
+.wicket{
+    background: #e74c3c;
+}
+
+.wicket:hover{
+    background: #c0392b;
+}

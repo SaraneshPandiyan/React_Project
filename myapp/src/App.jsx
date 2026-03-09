@@ -1,4 +1,6 @@
-import './App.css'
+// import './App.css'
+// import 'cricket'
+import Cricket from './components/Cricket/Cricket';
 
 // import Data from './components/Functional'
 // import Component  from './components/class';
@@ -18,8 +20,9 @@ function App(){
   // return <Forms />
   // return <Listeg />
   // return < TaskHome />
-  return <Main />
+  // return <Main />
   // return <Propsegs title="hey guys"/>
+  return <Cricket />
 
 }
 
