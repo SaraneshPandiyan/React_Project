@@ -9,7 +9,14 @@ export default function Cricket(){
     const [Wicket,setWicket] = useState(0);
 
     const Wickets = () =>{
-        setWicket(Wicket+1);
+        if(Wicket==9){
+            setWicket(0);
+            alert("Match Over")
+        }
+        else{
+            setWicket(Wicket+1);    
+        }
+        
         setBalls(Balls+1)
     }
 
@@ -25,16 +32,21 @@ export default function Cricket(){
    const Update=(runs)=>{
         setRuns(Runs+runs);
         setBalls(Balls+1);
+         if(Over===5){
+            setOvers(Over+1)
+            alert("game over")
+            }
     }
 
     return (<>
     <div className="container">
-    <center>
-        <h1>Cricket</h1>
-        <h2>Runs : {Runs}</h2>
-        <h2>Balls : {Balls}</h2>
-        <h2>Over : {Over}</h2>
-        <h2>Wicket : {Wicket}</h2>
+//     <center>
+        
+//         <h1>Cricket</h1>
+//         <h2>Runs : {Runs}</h2>
+//         <h2>Balls : {Balls}</h2>
+//         <h2>Over : {Over}</h2>
+//         <h2>Wicket : {Wicket}</h2>
 
         <button onClick={()=>Update(1)}>1</button>
         <button onClick={()=>Update(2)}>2</button>
@@ -48,3 +60,4 @@ export default function Cricket(){
         </>
     );
 }
+
